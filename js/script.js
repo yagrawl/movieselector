@@ -19,6 +19,8 @@ function randomMovies(){
         var Poster = PosterUrl + response.results[random].poster_path;
         console.log(Poster);
         document.getElementById("movie").innerHTML = movieName;
+        document.body.style.backgroundColor = "#f3f3f3";
+        document.body.style.backgroundImage = url('http://i.imgur.com/X8EaHML.jpg');
         $('#poster').css('visibility', 'visible').attr("src", Poster);
     });
 }
