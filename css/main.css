@@ -10,7 +10,7 @@
   }
 }
 
-@font-face {
+/*@font-face {
     font-family: Montserrat;
     src: url(fonts/Montserrat-Regular.otf);
     font-weight: Regular;
@@ -20,7 +20,7 @@
     font-family: Montserrat;
     src: url(fonts/Montserrat-Light.otf);
     font-weight: Light;
-}
+}*/
 
 .background { 
   position: fixed;
