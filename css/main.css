@@ -1,3 +1,15 @@
+@media screen {
+  body {
+    width: 75%;
+  }
+}
+
+@media print {
+  body {
+    width: 100%;
+  }
+}
+
 @font-face {
     font-family: Montserrat;
     src: url(fonts/Montserrat-Regular.otf);
