@@ -37,3 +37,10 @@ input[type=text] {
     padding: 14px 40px;
     border: none;
 }
+
+
+#poster 
+{
+    width: 600px;
+    visibility: hidden;
+}
