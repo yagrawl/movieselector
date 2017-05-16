@@ -7,8 +7,7 @@ function randomMovies(){
     var settings = {
       "async": true,
       "crossDomain": true,
-      // "url": BaseUrl + 'popular'  + APIkey  + '&page='+ randompage,
-      "url": BaseUrl + '122906' + APIkey,
+      "url": BaseUrl + 'popular'  + APIkey  + '&page='+ randompage,
       "method": "GET",
       "headers": {},
       "data": "{}"
@@ -16,12 +15,9 @@ function randomMovies(){
     $.ajax(settings).done(function (response) {
         random = Math.floor((Math.random() * 19) + 1);
         console.log(response);
-        // var movieName = response.results[random].title;
-        // var PosterX = PosterUrl + response.results[random].poster_path;
-        // var movieid = response.results[random].id.toString();
-        var movieName = 'About Time';
-        var PosterX = PosterUrl + '/zSuh8dGwqpsWR7ccvYbfxbSZ37o.jpg';
-        var movieid = '122906';
+        var movieName = response.results[random].title;
+        var PosterX = PosterUrl + response.results[random].poster_path;
+        var movieid = response.results[random].id.toString();
         document.getElementById("movie").innerHTML = movieName;
         $('#explain').css('visibility', 'hidden')
         $('#poster').css('visibility', 'visible').attr("src", PosterX);
