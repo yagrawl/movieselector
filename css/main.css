@@ -52,7 +52,7 @@
 
 .question-Font {
     font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
     color: #54566C;
     margin-top: 20px;
@@ -65,14 +65,14 @@ input[type=text] {
 
 .input-Text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: light;
     color: #282828;
 }
 
 .next-Button {
     border-radius: 4px;
-    font-size: 36px;
+    font-size: 24px;
     background-color: #D55656;
     text-align: center;
     color: white;
