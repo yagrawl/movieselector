@@ -1,48 +1,22 @@
-@media screen {
-  body {
-    width: 50%;
-  }
-}
-
-@media print {
-  body {
-    width: 100%;
-  }
-}
-
-/*@font-face {
-    font-family: Montserrat;
-    src: url(fonts/Montserrat-Regular.otf);
-    font-weight: Regular;
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url(fonts/Montserrat-Light.otf);
-    font-weight: Light;
-}*/
-
-.background { 
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background-color: #D8D8D8;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  z-index: 1
-  display: block;
-  opacity: 1;
-  transition:opacity 0.5s ease-out;
-
+.wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 0px;
+    background-color: #D8D8D8;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .content {
-  position: fixed;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .logo-Margin {
@@ -53,20 +27,23 @@
 .question-Font {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 400;
     color: #54566C;
     margin-top: 20px;
 }
 
-input[type=text] {
-    border: 1px solid #979797;
-    border-radius: 4px;
+.castName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #282828;
+    margin-top: 20px;
 }
 
 .input-Text {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    font-weight: light;
+    font-weight: 300;
     color: #282828;
 }
 
@@ -81,9 +58,49 @@ input[type=text] {
     border: none;
 }
 
-
-#poster 
-{
-    width: 600px;
+#cast1, #cast2, #cast3, #cast4, #cast5, #cast6, #imdb, #morebutton, #poster, #carr {
     visibility: hidden;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.zindex{
+    z-index: 10000;
+}
+
+.infoLabel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #282828;
+    text-align: left;
+}
+
+.overview {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #282828;
+    text-align: left;
+}
+
+body {
+    background-color: #d8d8d8;
+}
+
+.footer {
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #545454;
+}
+
+.footerText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #d8d8d8;
+    text-align: left;
 }
