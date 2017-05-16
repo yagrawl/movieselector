@@ -19,6 +19,7 @@ function randomMovies(){
         var PosterX = PosterUrl + response.results[random].poster_path;
         var movieid = response.results[random].id.toString();
         document.getElementById("movie").innerHTML = movieName;
+        $('#explain').css('visibility', 'hidden')
         $('#poster').css('visibility', 'visible').attr("src", PosterX);
         $('#poster').css('width', '300px');
         getBackground(movieid);
