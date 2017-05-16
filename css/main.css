@@ -1,3 +1,23 @@
+.body { 
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #D8D8D8;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 800px;
+  z-index: 1
+  display: block;
+
+}
+
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
 
 .logo-Margin {
     margin-top: 30px;
